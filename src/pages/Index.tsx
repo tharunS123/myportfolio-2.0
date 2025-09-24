@@ -1,12 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { MatrixBackground } from '@/components/MatrixBackground';
+import { Navigation } from '@/components/Navigation';
+import { HeroSection } from '@/components/HeroSection';
+import { AboutSection } from '@/components/AboutSection';
+import { ProjectsSection } from '@/components/ProjectsSection';
+import { ResumeSection } from '@/components/ResumeSection';
+import { ContactSection } from '@/components/ContactSection';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background text-foreground font-mono relative overflow-x-hidden">
+      {/* Matrix Background */}
+      <MatrixBackground />
+      
+      {/* Navigation */}
+      <Navigation />
+      
+      {/* Main Content */}
+      <main className="relative z-10">
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <ResumeSection />
+        <ContactSection />
+      </main>
     </div>
   );
 };
