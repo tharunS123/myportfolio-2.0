@@ -91,9 +91,9 @@ export const HeroSection = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 font-mono text-sm text-muted-foreground animate-bounce">
-          <div>scroll_down()</div>
-          <div className="w-px h-8 bg-primary mx-auto mt-2"></div>
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 font-mono text-sm text-muted-foreground animate-bounce flex flex-col items-center">
+          <div className="mb-2">scroll_down()</div>
+          <div className="w-px h-8 bg-primary mx-auto shadow-glow-sm"></div>
         </div>
       </div>
     </section>
